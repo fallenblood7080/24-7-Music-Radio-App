@@ -1,0 +1,28 @@
+name: freecodecamp_radio
+description: clone of freeCodeCamp radio
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.1.5 <4.0.0'
+
+dependencies:
+  bloc: ^8.1.2
+  dio: ^5.3.4
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.3
+  google_fonts: ^6.1.0
+  html: ^0.15.4
+  http: ^1.1.0
+  just_audio: ^0.9.36
+  just_audio_background: ^0.0.1-beta.11
+  meta: ^1.10.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
