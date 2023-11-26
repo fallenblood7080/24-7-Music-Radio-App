@@ -1,8 +1,9 @@
 # 24/7 Music Radio
-*This project is just made purely for learning purposes in Flutter.* <br></br>
+*This project is just made purely for learning purposes in Flutter. I dont want to misuse any freeCodeCamp API or anything* <br></br>
 To be honest, FreeCodeCamp Radio UI looks very plain and basic. <br></br>
 <img src = 'screenshot/Screenshot%202023-11-26%20170123.jpg' width = 200> <br></br>
-So I decided to give it a new look in Flutter.<br></br>
+### So I decided to give it a new look in Flutter and using freeCodeCamp radio Api(*I just dug into the codebase of freecodeCamp radio repo*) I am able to fetch radio data using rest API and able to play the music using the just_audio package.<br></br>
+
 <img src = 'screenshot/flutter_01-min.png' width = 200> 
 <img src = 'screenshot/flutter_02-min.png' width = 200>
 <img src = 'screenshot/flutter_03-min.png' width = 200>
