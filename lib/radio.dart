@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -9,6 +10,7 @@ import 'package:freecodecamp_radio/colorpalette.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:just_audio_background/just_audio_background.dart';
+import 'package:window_manager/window_manager.dart';
 
 class RadioPage extends StatefulWidget {
   final AudioPlayer player;
@@ -28,7 +30,7 @@ class _RadioPageState extends State<RadioPage> {
     setNewPalette();
   }
 
-  void setNewPalette() {
+  void setNewPalette(){
     setState(() {
       currentPalette = ColorPalette.getNextColorpalette(currentPalette);
       SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
@@ -48,6 +50,9 @@ class _RadioPageState extends State<RadioPage> {
       width: 200,
       margin: const EdgeInsets.all(0),
     ));
+    if(Platform.isWindows){
+      windowManager.setBackgroundColor(currentPalette[0]);
+    }
   }
 
   @override
@@ -66,7 +71,7 @@ class _RadioPageState extends State<RadioPage> {
               data: success.data,
               player: widget.player,
               radioBloc: radioBloc,
-              setNewPalette: () {
+              setNewPalette: (){
                 setNewPalette();
               },
             );

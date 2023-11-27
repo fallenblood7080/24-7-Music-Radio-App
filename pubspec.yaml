@@ -17,7 +17,9 @@ dependencies:
   http: ^1.1.0
   just_audio: ^0.9.36
   just_audio_background: ^0.0.1-beta.11
+  just_audio_windows: ^0.2.0
   meta: ^1.10.0
+  window_manager: ^0.3.7
 
 dev_dependencies:
   flutter_test:
