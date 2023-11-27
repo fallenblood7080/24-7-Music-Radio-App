@@ -51,7 +51,7 @@ class _RadioPageState extends State<RadioPage> {
       margin: const EdgeInsets.all(0),
     ));
     if(Platform.isWindows){
-      windowManager.setBackgroundColor(currentPalette[0]);
+      windowManager.setBackgroundColor(currentPalette[1]);
     }
   }
 
